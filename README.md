@@ -50,52 +50,6 @@ The application will be available at `http://localhost:5173/`.
 
 ---
 
-## Deployment
-
-### Deploy to Netlify
-1. Install Netlify CLI:
-   ```bash
-   npm install -g netlify-cli
-   ```
-2. Build the project:
-   ```bash
-   npm run build
-   ```
-3. Deploy:
-   ```bash
-   netlify deploy --prod
-   ```
-
-### Deploy to Vercel
-1. Install Vercel CLI:
-   ```bash
-   npm install -g vercel
-   ```
-2. Deploy:
-   ```bash
-   vercel
-   ```
-
-### Deploy to GitHub Pages
-1. Install GitHub Pages package:
-   ```bash
-   npm install gh-pages --save-dev
-   ```
-2. Add these scripts to `package.json`:
-   ```json
-   "scripts": {
-     "build": "vite build",
-     "deploy": "gh-pages -d dist"
-   }
-   ```
-3. Deploy:
-   ```bash
-   npm run build
-   npm run deploy
-   ```
-
----
-
 ## Troubleshooting
 
 ### Missing Dependencies

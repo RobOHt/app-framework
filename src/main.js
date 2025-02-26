@@ -28,7 +28,7 @@ const routes = [
 
 
 const router = new Router({
-  mode: 'history',
+  mode: 'hash',
   routes
 })
 

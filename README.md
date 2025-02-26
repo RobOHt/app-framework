@@ -7,7 +7,24 @@ A lightweight and responsive Vue.js + Tailwind CSS application for managing cour
 - Vue Router for seamless navigation between pages
 - Dynamic course pages for lectures and quizzes
 - Fully responsive design for desktop and mobile
-- Easy deployment on Netlify, Vercel, or GitHub Pages
+
+---
+
+## Challenges Faced During Development
+
+Building this project came with a few key challenges that needed careful handling:
+
+### **1. Routing & Navigation**
+Setting up Vue Router for seamless page transitions while ensuring the correct routes were activated, especially within nested views.
+
+### **2. Styling & UI Consistency**
+Tailwind CSS provided a solid foundation, but minor conflicts arose due to class overrides. Careful adjustments were made to maintain a clean, responsive design.
+
+### **4. Dependency & Version Conflicts**
+The project initially ran into compatibility issues with different Node.js versions. Updating and managing dependencies while maintaining stability was a necessary step.
+
+### **Final Thoughts**
+The project successfully overcame these hurdles, resulting in a clean, scalable structure ready for further expansion.
 
 ---
 

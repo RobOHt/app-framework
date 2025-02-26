@@ -15,13 +15,17 @@ Vue.config.productionTip = false
 Vue.use(Router)
 
 const routes = [
-  { path: '/', redirect: { name: 'DashboardHome' } },
-  { path: '/dashboard', component: Dashboard, children: [
-      { path: '/', redirect: { name: 'DashboardHome' } },
-      { path: 'home', name: 'DashboardHome', component: DashboardHome }
+  { path: '/', redirect: '/dashboard' }, // Redirect to Dashboard
+  { path: '/dashboard', component: () => import('@/pages/Dashboard.vue') }, // Dashboard page
+  { path: '/course', component: Dashboard, children: [
+      { path: '/', redirect: { name: 'DashboardHome' } }, // Course dashboard
+      { path: 'home', name: 'DashboardHome', component: DashboardHome }, // Course dashboard
+      { path: 'lecture-1', component: () => import('@/pages/Lecture1.vue') }, // Lecture page
+      { path: 'quiz-1', component: () => import('@/pages/Quiz1.vue') } // Quiz page
     ]
   }
-]
+];
+
 
 const router = new Router({
   mode: 'history',

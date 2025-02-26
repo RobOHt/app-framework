@@ -1,6 +1,13 @@
 {
-  "name": "vue-tailwind-admin",
+  "name": "app-framework",
   "version": "0.1.0",
+  "description": "An APP framework",
+  "author": "Robin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobOHt/app-framework.git"
+  },
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

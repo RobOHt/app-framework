@@ -1,31 +1,106 @@
-# vue-tailwind-admin
-A simple admin template built using [TailwindCSS](https://tailwindcss.com) & [Vue.js](https://vuejs.org). This project is also running [Vuex](https://vuex.vuejs.org) in order to control the sidebar state throughout components.
+# Vue.js Course Platform
 
-## Live Demo
-[https://angry-mahavira-9b32ec.netlify.com/](https://angry-mahavira-9b32ec.netlify.com/)
+A lightweight and responsive Vue.js + Tailwind CSS application for managing course materials, lectures, and quizzes.
 
-## Screenshot
-![alt text](https://camo.githubusercontent.com/cfc9183fa58b5017902e7c8878d4b0ce35bfd0fb/68747470733a2f2f692e6779617a6f2e636f6d2f63373433643165366262653663653762633265646264363635353663343931302e706e67)
+## Features
+- Built with Vue.js and Tailwind CSS for a modern UI
+- Vue Router for seamless navigation between pages
+- Dynamic course pages for lectures and quizzes
+- Fully responsive design for desktop and mobile
+- Easy deployment on Netlify, Vercel, or GitHub Pages
 
-## Project setup
+---
+
+## Installation & Setup
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/RobOHt/app-framework.git
+cd app-framework
 ```
+
+### 2. Install Dependencies
+Ensure Node.js (v16 or higher) is installed, then run:
+```bash
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 3. Start the Development Server
+```bash
+npm run dev
 ```
-npm run serve
+The application will be available at `http://localhost:5173/`.
+
+---
+
+## Deployment
+
+### Deploy to Netlify
+1. Install Netlify CLI:
+   ```bash
+   npm install -g netlify-cli
+   ```
+2. Build the project:
+   ```bash
+   npm run build
+   ```
+3. Deploy:
+   ```bash
+   netlify deploy --prod
+   ```
+
+### Deploy to Vercel
+1. Install Vercel CLI:
+   ```bash
+   npm install -g vercel
+   ```
+2. Deploy:
+   ```bash
+   vercel
+   ```
+
+### Deploy to GitHub Pages
+1. Install GitHub Pages package:
+   ```bash
+   npm install gh-pages --save-dev
+   ```
+2. Add these scripts to `package.json`:
+   ```json
+   "scripts": {
+     "build": "vite build",
+     "deploy": "gh-pages -d dist"
+   }
+   ```
+3. Deploy:
+   ```bash
+   npm run build
+   npm run deploy
+   ```
+
+---
+
+## Troubleshooting
+
+### Missing Dependencies
+If you encounter errors related to missing dependencies, try running:
+```bash
+npm install
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+### Port Already in Use
+If `npm run dev` fails due to a port conflict, specify a different port:
+```bash
+npm run dev -- --port=3000
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Build Issues
+If the build fails, clear cached dependencies and reinstall:
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+---
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
